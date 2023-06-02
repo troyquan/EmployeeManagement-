@@ -3,8 +3,7 @@
   "builds": [
     { "src": "build-command", "use": "@vercel/node@16.13.1" }
   ],
-  "rewrites": [
-    { "source": "/prod-api/(.*)", "destination": "/prod-api/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
+ ]
 }
