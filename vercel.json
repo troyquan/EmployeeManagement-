@@ -3,7 +3,10 @@
   "builds": [
     { "src": "build-command", "use": "@vercel/node@16.13.1" }
   ],
-  "rewrites":  [
-    {"source": "/(.*)", "destination": "/prod-api"}
- ]
+  "rewrites": [
+    {
+      "source": "/prod-api/:path*",
+      "destination": "http://3.145.100.55:8800/:path*"
+    }
+  ]
 }
