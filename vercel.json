@@ -4,6 +4,6 @@
     { "src": "build-command", "use": "@vercel/node@16.13.1" }
   ],
   "rewrites": [
-    { "source": "/:path*", "destination": "/index.html" }
+    { "source": "/prod-api/(.*)", "destination": "/index.html" }
   ]
 }
